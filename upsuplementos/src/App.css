@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+strong {
+    font-weight: 700;
+}
+
+#Notification {
+    width: 20px;
+    height: 20px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(20px , -10px);
+}
+
+#TiThMenu {
+    display: none;
+}
+
+#header {
+    height: 150px;
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#FaRegUserCircle {
+    font-size: 25px;
+}
+
+.linhaVertical {
+  width: 2px;
+  height: 25px;
+  background-color: #606060;
+    
+}
+
+.Cadastrar-se {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cadastrar-se p {
+    margin-left: 5px;
+
+}
+
+.LogoUp {
+    width: 200px;
+}
+
+#AreaInputPesquisa {
+    width: 40%;
+    display: flex;
+}
+
+#IoSearchSharp {
+    color: white;
+    font-size: 30px;
+    height: 100%;
+    cursor: pointer;
+    margin-top: 8px;
+    margin-left: -50px;
+}
+
+.InputPesquisa {
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    width: 100%;
+    color: white;
+    background-color: #ffffff3e;
+    border: none;
+    border: solid black 2px;
+}
+
+.InputPesquisa::placeholder {
+    color: #ffffff8f;
+}
+
+.NavRight {
+    display: flex;
+    justify-content: space-around;
+    width: 25%;
+    color: white;
+}
+
+.NavRight a {
+    cursor: pointer;
+    color: white;
+    margin-left: 10px;
+}
+
+.NavRight a:hover {
+    cursor: pointer;
+    color: #b0b0b0;
+    transition: .5s;
+}
+
+#FaShoppingCart {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+#IoLogoWhatsapp {
+    color: #25d366;
+    font-size: 40px;
+}
+
+#bttWpp {
+    background-color: white;
+    border: solid #25d366 2px;
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    bottom: 15px;
+    right: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+#header2 {
+    height: 100px;
+    background-color: #131313;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+@media only screen and (orientation: portrait) {
+    #FaRegUserCircle , .Cadastrar-se , .linhaVertical , .NavRight a , .InputPesquisa , #IoSearchSharp{
+        display: none;
+    }
+    
+    #TiThMenu {
+        display: block;
+        font-size: 100px;
+        margin-left: 20px;
+        color: white;
+        cursor: pointer;
+    }
+
+    #header {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #AreaLogoUp {
+        margin-left: 24%;
+    }
+
+    .NavRight {
+        display: flex;
+        justify-content: space-around;
+        color: white;
+        margin-right: 20px;
+    }
+
+
+
+    #bttWpp {
+        display: none;
+    }
+}

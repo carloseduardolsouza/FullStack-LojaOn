@@ -1,0 +1,97 @@
+#CartProduto {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#CartProdutoEstatic {
+    width: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#CartProduto:hover {
+    margin-top: -5px;
+    transition: .5s;
+}
+
+.ImgProduct {
+    border-radius: 20px;
+    height: 260px;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+#BttComprar {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #ae0000;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.InfoProductPrice {
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.SelectProductSabor {
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.TitleItem {
+    font-size: 20px;
+    height: 70px;
+}
+
+.InfoProductPrice strong {
+    color: #ae0000;
+    font-weight: 800;
+}
+
+.PriceTotProduto {
+    font-size: 23px;
+    font-weight: 600;
+}
+
+@media only screen and (orientation: portrait) {
+    #CartProduto {
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    #CartProdutoEstatic {
+        width: 220px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    #CartProduto:hover {
+        margin-top: 0px;
+    }
+}

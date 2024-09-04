@@ -1,0 +1,17 @@
+#ItemCartCheckout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #0000003d;
+    margin-bottom: 5px;
+}
+
+.ImgItemCartCheckout {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+}
+
+.NameProductItemCartCheckout {
+    width: 160px;
+}

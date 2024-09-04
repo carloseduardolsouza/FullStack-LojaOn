@@ -1,0 +1,54 @@
+#MenuPortraite {
+    background-color: #141414;
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    box-shadow: 5px 5px 5px black;
+    animation: entrada .5s;
+    overflow: hidden;
+}
+
+#MenuPortraite > header {
+    padding: 5px;
+
+}
+
+#MenuPortraite > header > h2 > a {
+    color: white;
+}
+
+#BttFecharMenu {
+    position: absolute;
+    color: white;
+    top: 10px;
+    right: 10px;
+    width: 25px;
+    height: 25px;
+    border: none;
+    background: none;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#navigation {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+#navigation a {
+    color: white;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+@keyframes entrada {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 60%;
+    }
+}

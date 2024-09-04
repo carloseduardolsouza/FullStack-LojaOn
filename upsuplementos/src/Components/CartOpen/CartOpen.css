@@ -1,0 +1,199 @@
+#CartOpen {
+    width: 650px; /* Largura do container */
+    height: 100%; /* Altura do container */
+    position: fixed; /* Fixa o container na tela */
+    right: 0; /* Alinha o container ao lado direito */
+    background-color: white;
+    z-index: 1; /* Garante que o container está acima de outros elementos */
+    box-shadow: 10px 10px 10px 15px black; /* Adiciona sombra ao container */
+
+    overflow-y: auto; /* Ativa a rolagem vertical */
+    overflow-x: hidden; /* Oculta a rolagem horizontal */
+    animation: entradaCart .3s linear
+  }
+
+#CartOpen > header {
+    background-color: #131313;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#CartOpen > header > button {
+    font-size: 15px;
+    border: solid white 2px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background: none;
+}
+
+@keyframes entradaCart {
+    0% {
+        width: 0px;
+    }
+
+    100% {
+        width: 650px;
+    }
+}
+
+.Opçõesdeentrega {
+    background-color: #dfdfdf;
+    margin: auto;
+    padding: 10px;
+}
+
+.inputradio {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.divSelect {
+    display: flex;
+    margin-top: 10px;
+    align-items: center;
+}
+
+#FinalCompraCart {
+    width: 90%;
+    padding: 10px;
+    font-size: 25px;
+    color: white;
+    background-color: #131313;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#FinalCompraCart:hover {
+    background-color: #131313c8;
+    transition: .5s;
+}
+
+#formCart {
+    width: 95%;
+    background-color: white;
+    margin: auto;
+    padding: 10px;
+    box-shadow: 0px 0px 10px #0000006e;
+    margin-top: 10px;
+    border-radius: 10px;
+    position: relative;
+}
+
+#radioselectEntrega {
+    position: absolute;
+    right: -180px;
+    top: 20px;
+    width: 15px;
+    cursor: pointer;
+    height: 15px;
+}
+
+#formCart input {
+    font-size: 17px;
+    width: 70%;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+#calcFreteCartOpen {
+    font-size: 17px;
+    width: 25%;
+    padding: 5px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    margin-left: 10px;
+    border-radius: 10px;
+}
+
+.formCartpt2 {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#formCart > p {
+    font-size: 17px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+#formCart > div > div > button {
+    width: 50%;
+    cursor: pointer;
+    border-radius: 10px;
+    background: none;
+    border: solid black 2px;
+
+}
+
+#formCart > div > div > button:hover {
+    background-color: black;
+    color: white;
+    transition: .3s;
+}
+
+@media only screen and (orientation: portrait) {
+    #CartOpen {
+        width: 100%;
+    }
+
+    #formCart {
+        width: 95%;
+        background-color: white;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+        box-shadow: 0px 0px 10px #0000006e;
+        margin-top: 10px;
+        border-radius: 10px;
+        position: relative;
+    }
+
+    #formCart input {
+        font-size: 17px;
+        width: 100%;
+        padding: 5px;
+        border-radius: 10px;
+        border: solid #00000050 2px;
+    }
+
+    #calcFreteCartOpen {
+        font-size: 17px;
+        width: 100%;
+        padding: 5px;
+        margin-top: 5px;
+        color: white;
+        background-color: black;
+        border: none;
+        cursor: pointer;
+        margin-left: 10px;
+        border-radius: 10px;
+    }
+
+    #radioselectEntrega {
+        position: absolute;
+        left: -200px;
+        top: 20px;
+        width: 15px;
+        cursor: pointer;
+        height: 15px;
+    }
+    
+}

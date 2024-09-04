@@ -1,0 +1,32 @@
+#Vantagens {
+    display: flex;
+    justify-content: space-around;
+}
+
+#Vantagens > div {
+    display: flex;
+}
+
+.Icon {
+    font-size: 50px;
+    margin-right: 5px;
+}
+
+@media only screen and (orientation: portrait) {
+    #Vantagens {
+        display: flex;
+        flex-wrap: wrap;
+        height: 80px;
+        overflow-x: hidden;
+        scrollbar-width: none;
+    }
+
+    .itemVantagem {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        align-items: center;
+
+    }
+}

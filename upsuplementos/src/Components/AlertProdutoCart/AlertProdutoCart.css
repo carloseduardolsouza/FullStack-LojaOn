@@ -1,0 +1,78 @@
+#AlertProdutoCart {
+    position: fixed;
+    top: 10px;
+    width: 400px;
+    padding: 10px;
+    right: 5px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #00000056;
+    animation: entradaAlertProdutoCart .5s;
+}
+
+#bttExitAlertProdutoCart {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    font-weight: 300;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+#AlertProdutoCart > div {
+    font-size: 15px;
+    text-align: left;
+}
+
+.imageAlertProdutoCart {
+    width: 100px;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+}
+
+.AreaInfoAlertProdutoCart {
+    display: flex;
+    align-items: center;
+}
+
+#AlertProdutoCart > button {
+    width: 100%;
+    margin-top: 5px;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+@keyframes entradaAlertProdutoCart {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+
+    100% {
+        opacity: 100;
+        transform: translateY(0px);
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    #AlertProdutoCart {
+        position: fixed;
+        top: 10px;
+        width: 100%;
+        padding: 10px;
+        right: 0px;
+        background-color: white;
+        border-radius: 0px;
+        box-shadow: 0px 0px 10px #00000056;
+        animation: entradaAlertProdutoCart .5s;
+    }
+}

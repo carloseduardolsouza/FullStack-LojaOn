@@ -1,0 +1,151 @@
+#Footer {
+    width: 100%;
+}
+
+.imgLogo {
+    width: 200px;
+}
+
+#NewSleeter {
+    margin-top: 20px;
+    background-color: #0000005e;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.ImgPagamento {
+    width: 45px;
+    margin-right: 10px;
+    padding: 5px;
+    border: solid #00000051 2px;
+    border-radius: 5px;
+}
+
+.areaRedesSociaisFooter {
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.AreaInputNeww {
+    width: 100%;
+    display: flex;
+}
+
+.AreaInputNeww > input {
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    margin-right: 10px;
+    border: none;
+    width: 50%;
+    margin-top: 10px;
+}
+
+.AreaInputNeww > button {
+    font-size: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 10%;
+    background-color: black;
+    color: white;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+
+}
+
+.NewSleter1 {
+    width: 50%;
+}
+
+#Suporte {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+#Suporte p {
+    margin-top: 10px;
+    font-size: 17px;
+}
+
+#Suporte a {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+#Suporte a:hover {
+    color: #0000008b;
+    transition: .3s;
+}
+
+#PagamentoEnvio {
+    border-top: solid #00000056 2px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#PagamentoEnvio h2 {
+    text-align: left;
+}
+
+@media only screen and (orientation: portrait) {
+    #NewSleeter {
+        flex-direction: column;
+        margin-left: 0px;
+    }
+
+    .AreaInputNeww {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-left: 0px;
+    }
+    
+    .AreaInputNeww > input {
+        padding: 10px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-right: 0px;
+        border: none;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 0px;
+    }
+    
+    .AreaInputNeww > button {
+        font-size: 15px;
+        padding: 10px;
+        border-radius: 10px;
+        margin-top: 10px;
+        width: 100%;
+        margin-bottom: 10px;
+        background-color: black;
+        color: white;
+        font-weight: 600;
+        border: none;
+        cursor: pointer;
+    
+    }
+
+    .NewSleter1 {
+        width: 90%;
+    }
+
+    #Suporte {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: space-around;
+        margin-bottom: 20px;
+        margin-top: 20px;
+    }
+
+}

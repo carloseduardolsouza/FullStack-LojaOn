@@ -1,0 +1,11 @@
+#Login {
+    margin: auto;
+    width: 50%;
+}
+
+@media only screen and (orientation: portrait) {
+    #Login {
+        margin: auto;
+        width: 80%;
+    }
+}

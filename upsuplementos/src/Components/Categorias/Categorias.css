@@ -1,0 +1,24 @@
+#Categorias {
+    height: 50px;
+    background-color: #131313;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#Categorias h2 {
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
+
+#Categorias h2:hover {
+    color: red;
+    transition: .5s;
+}
+
+@media only screen and (orientation: portrait) {
+    #Categorias {
+        display: none;
+    }
+}

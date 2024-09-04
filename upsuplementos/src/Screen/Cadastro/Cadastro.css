@@ -1,0 +1,44 @@
+#Cadastro {
+    width: 50%;
+    margin: auto;
+}
+
+.FormularioCadastro {
+    width: 100%;
+}
+
+.InputCadastro {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    border: solid #0000004c 2px;
+}
+
+#CadBtt {
+    width: 100%;
+    font-size: 20px;
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #000000dc;
+    color: white;
+    border: none;
+}
+
+.possueconta {
+    text-align: center;
+    font-size: 19px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (orientation: portrait) {
+    #Cadastro {
+        width: 80%;
+        margin: auto;
+    }
+}

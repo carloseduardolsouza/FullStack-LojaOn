@@ -1,0 +1,64 @@
+#AçãoRealizadasss {
+    width: 500px;
+    height: 200px;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    animation: entradaAçãoRealizadasss .3s;
+
+    background: rgba(255, 255, 255, 0.3); /* Cor com transparência */
+      border-radius: 10px;
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); /* Sombra */
+      backdrop-filter: blur(10px); /* Desfoque */
+      -webkit-backdrop-filter: blur(10px); /* Desfoque para navegadores Webkit (Safari, Chrome, etc.) */
+      border: 1px solid rgba(255, 255, 255, 0.18); /* Borda */
+}
+
+#AçãoRealizadasss h2 {
+  color: red;
+  text-align: center;
+  font-size: 40px;
+}
+
+.AlertAçãoRealizadasss {
+  font-size: 60px;
+  color: red;
+}
+
+.okAçãoRealizadasss {
+  width: 60%;
+  margin-top: 20px;
+  padding: 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid green;
+  background-color: #00000000;
+  color: green;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.okAçãoRealizadasss:hover {
+  background-color: green;
+  color: white;
+  transition: .3s;
+}
+
+@keyframes entradaAçãoRealizadasss {
+  0% {
+    top: 10%;
+    opacity: 0;
+  }
+  100% {
+    top: 20%;
+    opacity: 1;
+  }
+}

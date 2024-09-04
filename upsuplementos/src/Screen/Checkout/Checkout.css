@@ -1,0 +1,221 @@
+#Checkout {
+    position: relative;
+}
+
+#EntregaCheckoutDados {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#InfoCheckout {
+    width: 100%;
+}
+
+#InfoPedidoMobile {
+    display: none;
+}
+
+#ContinuarBtt {
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-bottom: 300px;
+}
+
+.Flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.EntregaCheckoutDadosInput {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #00000058;
+    margin-bottom: 5px;
+}
+
+.Flex p {
+    font-size: 15px;
+}
+
+#CartInfoCheckout {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 360px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #000000a5;
+    padding: 10px;
+}
+
+.iconCheckout {
+    width: 25px;
+    height: 25px;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+
+#StatusBar {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+.LinhaStatusBar {
+    height: 1px;
+    width: 50%;
+    background-color: black;
+    margin-top: 13px;
+}
+
+#labelRetirarNaLojaCheckout {
+    display: flex;
+    border: 1px solid #00000049;
+    padding: 5px;
+    margin: 10px 0px;
+    border-radius: 5px;
+    align-items: center;
+}
+
+#labelRetirarNaLojaCheckout > div {
+    margin-left: 10px;
+}
+
+.Retirarnaloja {
+    font-weight: 600;
+}
+
+.AvUniversitariaN°1745 {
+    font-weight: 200;
+    font-size: 13px;
+}
+
+#InfoPedidoMobileCart {
+    display: none;
+}
+
+
+
+
+
+/* From Uiverse.io by DaniloMGutavo */ 
+.checkbox-container {
+    display: inline-block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+  }
+  
+  .custom-checkbox {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid #00000061;
+    background-color: #eee;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+  }
+  
+  .custom-checkbox:checked ~ .checkmark {
+    background-color: #2196F3;
+    box-shadow: 0 3px 7px rgba(33, 150, 243, 0.3);
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  @keyframes checkAnim {
+    0% {
+      height: 0;
+    }
+  
+    100% {
+      height: 10px;
+    }
+  }
+  
+  .custom-checkbox:checked ~ .checkmark:after {
+    animation: checkAnim 0.2s forwards;
+  }
+
+  
+
+
+
+
+@media only screen and (orientation: portrait) {
+    #CartInfoCheckout {
+        display: none;
+    }
+
+    #StatusBar {
+        width: 100%;
+        display: block;
+        display: flex;
+        justify-content: space-around;
+        margin-left: 0px;
+        margin-top: 10px;
+    }
+
+    .LinhaStatusBar {
+        width: 80%;
+    }
+
+    #EntregaCheckoutDados {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    #InfoPedidoMobile {
+        display: flex;
+        justify-content: space-between;
+        padding: 5px;
+        background-color: #141414;
+        color: white;
+    }
+
+    #InfoPedidoMobileCart {
+        display: block;
+    }
+}

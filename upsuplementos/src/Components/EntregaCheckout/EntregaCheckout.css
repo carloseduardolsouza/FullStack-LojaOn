@@ -1,0 +1,99 @@
+#EntregaCheckout {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#Entregapt2Checkout {
+    width: 100%;
+    border: 2px solid #00000058;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+#AreaInputDadospt2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#BttContinuarPagamento {
+    font-size: 15px;
+    background-color: black;
+    color: white;
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#BttContinuarPagamento:hover {
+    background-color: #161616;
+}
+
+#IoLocationOutline {
+    font-size: 30px;
+}
+
+.a122 {
+    display: flex;
+}
+
+#AlterarCepCheckout {
+    height: 35px;
+    width: 100px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: solid #252525 1px;
+}
+
+#AreaEndereço {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #00000058;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inputCtt {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #00000058;
+    margin-bottom: 5px;
+}
+
+.InputDadosEntregas {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid #00000058;
+    margin-bottom: 5px;
+}
+
+.InputDadosEntregaspt2 {
+    width: 100%;
+    font-size: 15px;
+    padding: 5px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid #00000058;
+    margin-bottom: 5px;
+}
+
+@media only screen and (orientation: portrait) {
+    #EntregaCheckout {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}

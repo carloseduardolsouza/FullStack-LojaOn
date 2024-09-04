@@ -1,0 +1,160 @@
+#PagamentoCheckout {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#ItemFormPaymentCard , #ItemFormPaymentPix {
+    border: 1px solid #00000032;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+#ItemFormPaymentCard > div , #ItemFormPaymentCard > div {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#ItemFormPaymentCard > div > .itemFormPaymentCardHeader , #ItemFormPaymentPix > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ItemFormPaymentCard > div > .itemFormPaymentCardHeader > p, #ItemFormPaymentPix > div > p {
+    margin-left: 10px;
+}
+
+#IoIosArrowForward {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#IoIosArrowForward {
+    font-size: 25px;
+}
+
+.InfoPagamento {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #9f9fee;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+#IoIosInformationCircleOutline {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+#ConfirmInfoPagamento {
+    border: 1px solid #00000051;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#ConfirmInfoPagamento > label {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ConfirmInfoPagamento > label > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ConfirmInfoPagamento > label > button {
+    width: 150px;
+    background: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #00000051;
+}
+
+.IconConfirmInfoPagamento {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#FazerPedidoCheckoutPagamento {
+    width: 200px;
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.divFazerPedidoCheckoutPagamento {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+#flexCart {
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+
+}
+
+.NumCartão {
+    width: 90%;
+    margin-top: 10px;
+    font-size: 16px;
+    padding: 8px;
+    margin: 15px 0px 0px 0px;
+    border-radius: 5px;
+    border: 2px solid #0000005b;
+}
+
+.ValidadeCartão , .NomeCartão , .CvvCartão {
+    width: 50%;
+    margin-top: 0px;
+    font-size: 16px;
+    padding: 8px;
+    margin: 15px 0px 5px 0px;
+    border-radius: 5px;
+    border: 2px solid #0000005b;
+}
+
+#mesagePixCheckout {
+    font-size: 13px;
+}
+
+#SelectParcelas {
+    width: 93%;
+    font-size: 16px;
+    padding: 8px;
+    margin-top: 0px;
+    margin: 15px 0px 5px 0px;
+    border-radius: 5px;
+    border: 2px solid #0000005b;
+}
+
+.ValidadeCartão {
+    width: 15%;
+}
+
+.CvvCartão {
+    width: 10%;
+}
+
+@media only screen and (orientation: portrait) {
+    #PagamentoCheckout {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}

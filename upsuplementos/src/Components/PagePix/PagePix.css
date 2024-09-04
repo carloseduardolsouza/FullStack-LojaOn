@@ -1,0 +1,72 @@
+#PagePix {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#PagePix1 {
+    border: 2px solid #0000005c;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#bttFaRegCopy {
+    padding: 12px;
+    width: 100%;
+    color: white;
+    cursor: pointer;
+    background-color: black;
+    border-radius: 5px;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+
+.FlexPagePix {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.FlexPagePix > div {
+    width: 300px;
+    font-size: 15px;
+}
+
+.FlexPagePix > div > p {
+    margin-bottom: 14px;
+}
+
+.FlexPagePix > img {
+    width: 200px;
+    height: 200px;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #0000005c;
+}
+
+@media only screen and (orientation: portrait) {
+    #PagePix {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .FlexPagePix {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    .FlexPagePix > div {
+        width: 100%;
+        font-size: 15px;
+    }
+    
+    #bttFaRegCopy {
+        margin-top: 20px;
+    }
+}

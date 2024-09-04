@@ -1,0 +1,233 @@
+#InfoProduct {
+    display: flex;
+    justify-content: space-around;
+}
+
+#InformaçãoProduct {
+    width: 50%;
+}
+
+.DivPagamento {
+    margin-bottom: 3px;
+}
+
+#InformaçãoProduct > h2 {
+    font-size: 35px;
+}
+
+.Compartilhar {
+    margin-top: 20px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.Compartilhar:hover {
+    cursor: pointer;
+    color: #b0b0b0;
+    transition: .5s;
+}
+
+.IoMdShareAlt {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+#InformaçãoProduct > h3 {
+    font-weight: 500;
+    font-size: 25px;
+}
+
+.ImageProduct {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-container {
+    width: 500px;
+}
+
+.SelectComprar {
+    width: 100%;
+    padding: 10px;
+
+}
+
+.SelectComprar > input {
+    font-size: 25px;
+    margin-top: 20px;
+    padding: 10px;
+    width: 70px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid #00000065;
+}
+
+.SelectComprar > button {
+    width: 70%;
+    font-size: 25px;
+    margin-left: 10px;
+    background-color: #ae0000;
+    border: none;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.SelectComprar > button:hover {
+    background-color: #c42323;
+    transition: .5s;
+}
+
+#InformaçãoFrete {
+    margin-top: 20px;
+    background-color: #0000002d;
+    padding: 10px;
+    width: 82%;
+    border-radius: 20px;
+
+    overflow: hidden;
+    position: relative;
+
+    height: 120px;
+}
+
+#InformaçãoFrete h3 {
+    font-size: 25px;
+}
+
+#InformaçãoFrete input {
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+}
+
+#InformaçãoFrete button {
+    width: 40%;
+    font-size: 20px;
+    margin-left: 10px;
+    background-color: #000000;
+    border: none;
+    font-weight: 500;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#Descrição {
+    width: 90%;
+    margin: auto;
+    font-size: 20px;
+}
+
+.DivPagamento strong {
+    color: #ae0000;
+    font-weight: 700;
+}
+
+.AreaFrete {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#priceFrete {
+    font-weight: 600;
+    font-size: 18px;
+}
+
+#FaInfoCircle {
+    font-size: 18px;
+    margin-right: 5px;
+}
+
+#title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.SelectSaborInfoProduct {
+    font-size: 20px;
+    padding: 5px;
+    border: solid #0000006e 2px;
+    border-radius: 10px;
+    color: #000000c7;
+}
+
+@keyframes abrirCaixa {
+    0% {
+        height: 120px;
+    }
+    100% {
+        height: 250px;
+    }
+}
+
+@media only screen and (orientation: portrait) {
+    #InfoProduct {
+        display: block;
+    }
+
+    #ImageProduct {
+        width: 60%;
+        height: 400px;
+        margin: auto;
+        background-position: center;
+        background-size: cover;
+    }
+
+    #InformaçãoProduct {
+        width: 100%;
+    }
+
+    #InformaçãoProduct > h2 {
+        font-size: 30px;
+    }
+
+    #InformaçãoFrete {
+        margin-top: 20px;
+        padding: 10px;
+        width: 90%;
+        margin: auto;
+        border-radius: 20px;
+    
+        overflow: hidden;
+        position: relative;
+    
+        height: 170px;
+    }
+
+    #InformaçãoFrete h3 {
+        font-size: 20px;
+    }
+    
+    #InformaçãoFrete input {
+        font-size: 15px;
+        margin-top: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        width: 90%;
+    }
+    
+    #InformaçãoFrete button {
+        width: 90%;
+        font-size: 20px;
+        margin-top: 10px;
+    }
+
+    @keyframes abrirCaixa {
+        0% {
+            height: 170px;
+        }
+        100% {
+            height: 350px;
+        }
+    }
+}

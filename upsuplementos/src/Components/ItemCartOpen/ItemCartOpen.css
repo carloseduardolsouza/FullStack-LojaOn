@@ -1,0 +1,46 @@
+#ItemCartOpen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 180px;
+    border-bottom: solid black 2px;
+    margin-bottom: 10px;
+}
+
+.ImageProductCart {
+    width: 250px;
+    height: 90%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.TitleProductCart {
+    text-align: center;
+    width: 30%;
+    cursor: pointer;
+}
+
+.InputProductCart {
+    font-size: 30px;
+    width: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.DeleteProductCart {
+    font-size: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+.PriceItenUnic {
+    width: 30%;
+    text-align: center;
+}

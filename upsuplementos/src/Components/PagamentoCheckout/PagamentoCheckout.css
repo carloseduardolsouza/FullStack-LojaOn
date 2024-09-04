@@ -1,0 +1,122 @@
+#PagamentoCheckout {
+    width: 50%;
+    margin-left: 10%;
+    margin-top: 10px;
+}
+
+#ItemFormPaymentCardOff , #ItemFormPaymentPixOff {
+    border: 1px solid #00000032;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#ItemFormPaymentCardOn , #ItemFormPaymentPixOn {
+    border: 1px solid #00000032;
+    padding: 10px;
+    border-radius: 5px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+#ItemFormPaymentCardOff > div , #ItemFormPaymentPixOff > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ItemFormPaymentCardOn > div , #ItemFormPaymentPixOn > div {
+    display: flex;
+    justify-content: center;
+}
+
+#ItemFormPaymentCardOff > div > p, #ItemFormPaymentPixOff > div > p {
+    margin-left: 10px;
+}
+
+#ItemFormPaymentCardOn > div > p , #ItemFormPaymentPixOn > div > p {
+    margin-left: 10px;
+}
+
+#IoIosArrowForward {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.InfoPagamento {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #9f9fee;
+    padding: 10px;
+    font-size: 12px;
+    border-radius: 5px;
+}
+
+#IoIosInformationCircleOutline {
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+#ConfirmInfoPagamento {
+    border: 1px solid #00000051;
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#ConfirmInfoPagamento > label {
+    display: flex;
+    justify-content: space-between;
+}
+
+#ConfirmInfoPagamento > label > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ConfirmInfoPagamento > label > button {
+    width: 150px;
+    background: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 1px solid #00000051;
+}
+
+.IconConfirmInfoPagamento {
+    font-size: 25px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#FazerPedidoCheckoutPagamento {
+    width: 200px;
+    font-size: 17px;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+
+.divFazerPedidoCheckoutPagamento {
+    display: flex;
+    justify-content: right;
+    margin-top: 10px;
+}
+
+@media only screen and (orientation: portrait) {
+    #PagamentoCheckout {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+    }
+}

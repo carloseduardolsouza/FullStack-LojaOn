@@ -1,0 +1,19 @@
+.image-slider img {
+    width: 100%;
+    height: 500px;
+    border: none;
+}
+
+.slick-slider {
+    overflow: hidden; /* Para evitar a rolagem horizontal extra */
+  }
+  
+  .slick-track {
+    display: flex;
+  }
+  
+  .slick-slide {
+    /* Adapte o tamanho dos slides conforme necessário */
+    box-sizing: border-box;
+  }
+  
