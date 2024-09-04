@@ -1,0 +1,42 @@
+.ItensTableProdutos td {
+    text-align: center;
+}
+
+.ItensTableProdutos {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    border-bottom: 1px solid #ccc;
+}
+
+#BttDelete {
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #971818;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: white;
+
+}
+
+#BttDelete:hover {
+    background-color: #b73030;
+    transition: .5s;
+}
+
+#BttEdit {
+    font-size: 20px;
+    padding: 5px;
+    cursor: pointer;
+    border: none;
+    background-color: #414141;
+    border-radius: 5px;
+    color: white;
+}
+
+#BttEdit:hover {
+    background-color: #656565;
+    transition: .5s;
+}

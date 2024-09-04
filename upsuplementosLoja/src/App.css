@@ -1,0 +1,28 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+#MenuLateral {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: fixed;
+    background-color: #ebebeb;
+    width: 150px;
+    height: 100%;
+    box-shadow: 0px 0px 10px #00000052;
+}
+
+#MenuLateral p {
+    color: #3f3f3f;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#MenuLateral #Link {
+    text-decoration: none;
+    margin-bottom: 5px;
+    color: black;
+}

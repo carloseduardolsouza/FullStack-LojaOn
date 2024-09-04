@@ -1,0 +1,79 @@
+#CadastroDeProduto {
+    margin-left: 190px ;
+    padding: 20px ;
+}
+
+#FormNomeDesc {
+    border: solid #bebebe 2px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+}
+
+#FormNomeDesc label p {
+    font-size: 13px;
+    margin-top: 15px;
+    color: #7b7b7b;
+}
+
+#InputNomeProduct {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid #bebebe 2px;
+    width: 90%;
+}
+
+#InputNomeProduct:focus {
+    outline: none;
+}
+
+
+#FormFotos {
+    border: solid #bebebe 2px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+}
+
+#FormPreços {
+    border: solid #bebebe 2px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+}
+
+#FormPreços div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#FormPreços div input {
+    width: 100%;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 5px;
+    border: #7b7b7b solid 2px;
+}
+
+#bttCadProdct {
+    width: 220px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2b2baf;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 740px;
+    margin-top: 20px;
+}
