@@ -18,8 +18,23 @@ const sherProducts = async (product) => {
     return produto
 }
 
+const cadastrarProduto = async (dados , imagens) => {
+    const {
+        produto,
+        valor,
+        descricao,
+        sabores,
+    } = dados
+
+    const query = 'INSERT INTO products (produto , valor , descricao , sabores , imagem) VALUES (?,?,?,?,?)'
+    const values = [produto , valor , descricao , sabores , imagens]
+
+    const cadastrarClientes = await connection.execute(query , values)
+}
+
 module.exports = {
     getProducts,
     getProductsId,
-    sherProducts
+    sherProducts,
+    cadastrarProduto
 }

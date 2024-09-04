@@ -18,7 +18,7 @@ function CartProduto({ product }) {
 
     const imagesemColchetes = imagem.slice(1, -1);
     const image = imagesemColchetes.split(",");
-    const linkImage = `http://localhost:3311/imagens/${image[0]}`;
+    const linkImage = `http://localhost:3311/imagens/${image[0].slice(1, -1)}`;
 
     const [objeto, setObjeto] = useState({
         id: id + "," + saborSelect,

@@ -27,8 +27,7 @@
     border-radius: 20px;
     height: 260px;
     width: 100%;
-    background-size: cover;
-    background-position: center;
+    background-image: url('http://localhost:3311/imagens/1725472878623_wheyNMlata(1).webp');
 }
 
 #BttComprar {

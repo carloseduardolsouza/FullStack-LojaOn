@@ -19,7 +19,7 @@ const getProductsId = async (req, res) => {
 
 const proverImagens = async (req, res) => {
     const { nomeImagem } = req.params;
-    const imagePath = path.join(process.env.IMAGENS_PATH, 'upload', nomeImagem);
+    const imagePath = path.join(process.env.IMAGENS_PATH || '../upload', nomeImagem);
 
     try {
         if (fs.existsSync(imagePath)) {
@@ -31,7 +31,6 @@ const proverImagens = async (req, res) => {
             if (ext === '.webp') contentType = 'image/webp';
 
             res.setHeader('Content-Type', contentType);
-
             fs.createReadStream(imagePath).pipe(res);
         } else {
             res.status(404).json({ error: 'Imagem não encontrada' });
@@ -48,11 +47,19 @@ const sherProducts = async (req , res) => {
     return res.status(200).json(product)
 }
 
+const cadastrarProduto = async (req , res) => {
+    const dados = JSON.parse(req.body.dados)
+    const produtos = await productsModels.cadastrarProduto(dados , req.file.timestamp)
+
+    return res.status(201).json(produtos)
+}
+
 
 // Exporta a função getProducts para ser usada em outras partes da aplicação
 module.exports = {
     getProducts,
     getProductsId,
     proverImagens,
-    sherProducts
+    sherProducts,
+    cadastrarProduto
 };

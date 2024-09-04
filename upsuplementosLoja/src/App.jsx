@@ -12,6 +12,7 @@ import Produtos from './Screen/Produtos/Produtos';
 import CadastroDeProduto from './Screen/CadastroDeProduto/CadastroDeProduto';
 
 import { BrowserRouter as Router, Route, Routes , Link} from 'react-router-dom';
+import EditarProduto from './Screen/EditarProduto/EditarProduto';
 
 function App() {
   return (
@@ -34,7 +35,7 @@ function App() {
       <Route path='/' element={<PaginaInicial/>}/>
       <Route path='/produtos' element={<Produtos/>}/>
       <Route path='/cadastrarProduto' element={<CadastroDeProduto/>}/>
-      <Route path='/editarProduto' element={}/>
+      <Route path='/editarProduto' element={<EditarProduto/>}/>
     </Routes>
     </Router>
   );

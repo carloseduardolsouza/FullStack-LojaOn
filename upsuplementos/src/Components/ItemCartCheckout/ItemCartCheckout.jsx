@@ -14,9 +14,10 @@ function ItemCartCheckout({product}) {
     const imagesemColchetes = imagem.slice(1, -1)
     const image = imagesemColchetes.split(',')
 
-    const linkImage = `http://localhost:3311/imagens/${image[0]}`;
+    const linkImage = `http://localhost:3311/imagens/${image[0].slice(1, -1)}`;
     return ( 
         <div id="ItemCartCheckout">
+            {console.log(linkImage)}
             <div style={{backgroundImage: `url(${linkImage})`}} className="ImgItemCartCheckout"/>
             <p className="NameProductItemCartCheckout">{produto + `  (x${quantidade})` + ` ${sabor}`}</p>
             <p>{services.formatarCurrency(valor)}</p>

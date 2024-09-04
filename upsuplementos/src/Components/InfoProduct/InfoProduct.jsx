@@ -85,10 +85,11 @@ function InfoProduct({ data }) {
             <div id="InfoProduct">
                 {alerta && <Alerta parametro={"Selecione um Sabor"} functio={() => setAlerta(false)} />}
                 <div className="slider-container">
+                        {console.log(image)}
                     <Slider {...settings}>
                         {image.map((img) => (
                             <div>
-                                <img className="ImageProduct" src={`http://localhost:3311/imagens/${img}`}/>
+                                <img className="ImageProduct" src={`http://localhost:3311/imagens/${img.slice(1, -1)}`}/>
                             </div>
                         ))}
                     </Slider>

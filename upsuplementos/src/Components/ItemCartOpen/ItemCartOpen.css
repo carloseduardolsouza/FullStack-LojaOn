@@ -10,8 +10,9 @@
 .ImageProductCart {
     width: 250px;
     height: 90%;
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
     border-radius: 10px;
     margin-left: 5px;
 }
