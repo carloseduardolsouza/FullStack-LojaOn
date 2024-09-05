@@ -40,3 +40,16 @@
     background-color: #656565;
     transition: .5s;
 }
+
+.ImgItensTableProdutos {
+    width: 100px;
+    height: 100px;
+    background-position: center;
+    background-size: cover;
+}
+
+.tdImageProduct {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

@@ -35,7 +35,7 @@ function InfoProduct({ data }) {
     const image = imagesemColchetes.split(',');
 
     const [objeto, setObjeto] = useState({
-        id: id,
+        id: id + ',',
         produto: produto,
         valor: valor,
         quantidade: 1,
@@ -85,14 +85,20 @@ function InfoProduct({ data }) {
             <div id="InfoProduct">
                 {alerta && <Alerta parametro={"Selecione um Sabor"} functio={() => setAlerta(false)} />}
                 <div className="slider-container">
-                        {console.log(image)}
+                {image.length > 1 ? (
                     <Slider {...settings}>
-                        {image.map((img) => (
-                            <div>
-                                <img className="ImageProduct" src={`http://localhost:3311/imagens/${img.slice(1, -1)}`}/>
+                        {image.map((img, index) => (
+                            <div key={index}>
+                                <img className="ImageProduct" src={`http://localhost:3311/imagens/${img.slice(1, -1)}`} alt="Produto" />
                             </div>
                         ))}
                     </Slider>
+                ) : (
+                    <div
+                        className="ImageProductUnico"
+                        style={{ backgroundImage: `url(http://localhost:3311/imagens/${image[0].slice(1, -1)})` }}
+                    />
+                                    )}
                 </div>
 
                 <div id="InformaçãoProduct">
@@ -190,7 +196,7 @@ function InfoProduct({ data }) {
 
             <div id="Descrição">
                 <h2>Descrição Produto</h2>
-                <p>{descricao}</p>
+                <div dangerouslySetInnerHTML={{__html: descricao}} />
             </div>
         </div>
     );

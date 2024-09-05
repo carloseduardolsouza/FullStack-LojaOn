@@ -1,0 +1,174 @@
+#EditarProduto {
+    margin-left: 190px ;
+    padding: 20px ;
+}
+
+#FormNomeDesc {
+    border: solid #bebebe 2px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+}
+
+#IoIosAddCircleOutline {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.upload-label {
+    border: dotted 2px #253bb3;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+  }
+
+#FormNomeDesc label p {
+    font-size: 13px;
+    margin-top: 15px;
+    color: #7b7b7b;
+}
+
+#InputNomeProduct {
+    font-size: 15px;
+    padding: 5px;
+    border-radius: 5px;
+    border: solid #bebebe 2px;
+    width: 90%;
+}
+
+#InputNomeProduct:focus {
+    outline: none;
+}
+
+
+#FormFotos {
+    border: solid #bebebe 2px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+}
+
+#FormPreços {
+    border: solid #bebebe 2px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+}
+
+#FormSabores {
+    border: solid #bebebe 2px;
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #c7c7c7;
+}
+
+#FormPreços div {
+    display: flex;
+    justify-content: space-around;
+}
+
+#FormPreços div input {
+    width: 100%;
+    font-size: 18px;
+    padding: 6px;
+    border-radius: 5px;
+    border: #7b7b7b solid 2px;
+}
+
+#bttCadProdct {
+    width: 220px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2b2baf;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 740px;
+    margin-top: 20px;
+}
+
+.zindex {
+    width: 200px;
+}
+
+.upload-labelopened {
+    border: dotted 2px #253bb3;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin-left: 10px;
+    height: 100%;
+}
+
+.InputSabores {
+    font-size: 15px;
+    padding: 10px;
+    border: solid #0000003e 2px;
+    border-radius: 5px;
+    width: 40%;
+}
+
+.ButtonOkSabores {
+    font-size: 15px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2020ae;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 20px;
+    width: 150px;
+    color: white;
+}
+
+.ItemSabor {
+    padding: 10px;
+    border: #0000003e solid 2px;
+    border-radius: 10px;
+    display: flex;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
+    width: 130px;
+    margin: 5px;
+}
+
+.ItemSabor button {
+    margin-left: 10px;
+    padding: 3px;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    border: none;
+}
+
+#ListaSabor {
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}

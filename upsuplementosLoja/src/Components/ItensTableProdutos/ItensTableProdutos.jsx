@@ -5,13 +5,23 @@ import services from "../../services/services"
 
 function ItensTableProdutos({product}) {
     const {
+        id,
         produto,
-        valor
+        valor,
+        imagem
     } = product
+
+    const imagesemColchetes = imagem.slice(1, -1);
+    const image = imagesemColchetes.split(",");
+    const linkImage = `http://localhost:3311/imagens/${image[0].slice(1, -1)}`;
+
+    const linkEdit = `/editarProduto/${id}`
+
     return ( 
         <tr className="ItensTableProdutos">
-            <td>
-                <div/>
+            <td className="tdImageProduct">
+                <div style={{backgroundImage: `url(${linkImage})`}}
+                className="ImgItensTableProdutos"/>
                 <p>{produto}</p>
             </td>
 
@@ -19,7 +29,7 @@ function ItensTableProdutos({product}) {
 
             <td>
                 <button id="BttDelete"><MdDeleteOutline /></button>
-                <button id="BttEdit"><HiOutlinePencilSquare /></button>
+                <a href={linkEdit} id="BttEdit"><HiOutlinePencilSquare /></a>
             </td>
         </tr>
      );

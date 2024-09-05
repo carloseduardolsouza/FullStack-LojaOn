@@ -35,7 +35,7 @@ function App() {
       <Route path='/' element={<PaginaInicial/>}/>
       <Route path='/produtos' element={<Produtos/>}/>
       <Route path='/cadastrarProduto' element={<CadastroDeProduto/>}/>
-      <Route path='/editarProduto' element={<EditarProduto/>}/>
+      <Route path='/editarProduto/:id' element={<EditarProduto/>}/>
     </Routes>
     </Router>
   );

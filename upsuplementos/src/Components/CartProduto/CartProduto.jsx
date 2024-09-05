@@ -7,7 +7,7 @@ import Alerta from "../Alerta/Alerta";
 import AlertProdutoCart from "../AlertProdutoCart/AlertProdutoCart";
 
 function CartProduto({ product }) {
-    const { id, produto, valor, imagem, sabores } = product;
+    const { id, produto, valor, imagem, sabores , promocao } = product;
 
     const [sabor, setSabor] = useState([]);
     const [className, setClassName] = useState("CartProduto");
@@ -83,6 +83,12 @@ function CartProduto({ product }) {
             {alerta && <Alerta parametro={"Selecione um Sabor"} functio={() => setAlerta(false)} />}
             {stage === 0 ? (
                 <div>
+                    {promocao === 1 &&
+                        <div id="Promo">
+                            <p>30%</p>
+                            <p>OFF</p>
+                        </div>
+                    }
                     <a href={`/product/${id}`}>
                         <div
                             className="ImgProduct"
@@ -115,6 +121,12 @@ function CartProduto({ product }) {
                 </div>
             ) : (
                 <div>
+                    {promocao === 1 &&
+                        <div id="Promo">
+                            <p>30%</p>
+                            <p>OFF</p>
+                        </div>
+                    }
                     <div>
                         <div
                             className="ImgProduct"
